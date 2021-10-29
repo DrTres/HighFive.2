@@ -61,25 +61,25 @@ class Preferences: ObservableObject {
     // MARK: - First row of configurable buttons
     
     // UserDefaults for button left (3rd row) with default values
-    @AppStorage("FirstRowTitleLeft") var firstRowTitleLeft: String = "Remote Support"
+    @AppStorage("FirstRowTitleLeft") var firstRowTitleLeft: String = "Zoom"
     @AppStorage("FirstRowSubtitleLeft") var firstRowSubtitleLeft: String = ""
-    @AppStorage("FirstRowTypeLeft") var firstRowTypeLeft: String = "App"
-    @AppStorage("FirstRowLinkLeft") var firstRowLinkLeft: String = "com.apple.ScreenSharing"
-    @AppStorage("FirstRowSymbolLeft") var firstRowSymbolLeft: String = "cursorarrow"
+    @AppStorage("FirstRowTypeLeft") var firstRowTypeLeft: String = "URL"
+    @AppStorage("FirstRowLinkLeft") var firstRowLinkLeft: String = "https://zoom.us/s/6376466059#success"
+    @AppStorage("FirstRowSymbolLeft") var firstRowSymbolLeft: String = "video.fill"
     
     // UserDefaults for optional button middle (3th row)
-    @AppStorage("FirstRowTitleMiddle") var firstRowTitleMiddle: String = ""
+    @AppStorage("FirstRowTitleMiddle") var firstRowTitleMiddle: String = "Black Glove Inc."
     @AppStorage("FirstRowSubtitleMiddle") var firstRowSubtitleMiddle: String = ""
     @AppStorage("FirstRowTypeMiddle") var firstRowTypeMiddle: String = "URL"
-    @AppStorage("FirstRowLinkMiddle") var firstRowLinkMiddle: String = ""
-    @AppStorage("FirstRowSymbolMiddle") var firstRowSymbolMiddle: String = ""
+    @AppStorage("FirstRowLinkMiddle") var firstRowLinkMiddle: String = "https://blackglove.com"
+    @AppStorage("FirstRowSymbolMiddle") var firstRowSymbolMiddle: String = "hand.wave"
 
     // UserDefaults for button right (3rd row) with default values
-    @AppStorage("FirstRowTitleRight") var firstRowTitleRight: String = "Company Store"
+    @AppStorage("FirstRowTitleRight") var firstRowTitleRight: String = "Maintaince Request"
     @AppStorage("FirstRowSubtitleRight") var firstRowSubtitleRight: String = ""
     @AppStorage("FirstRowTypeRight") var firstRowTypeRight: String = "App"
-    @AppStorage("FirstRowLinkRight") var firstRowLinkRight: String = "com.apple.AppStore"
-    @AppStorage("FirstRowSymbolRight") var firstRowSymbolRight: String = "cart.fill"
+    @AppStorage("FirstRowLinkRight") var firstRowLinkRight: String = "https://support.apple.com"
+    @AppStorage("FirstRowSymbolRight") var firstRowSymbolRight: String = "wrench.and.screwdriver"
     
     // MARK: - Second row of configurable buttons
     
