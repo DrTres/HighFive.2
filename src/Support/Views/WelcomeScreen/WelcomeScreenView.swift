@@ -99,7 +99,7 @@ struct WelcomeView: View {
                     
                     FeatureView(image: "briefcase", title: NSLocalizedString("Easy access", comment: ""), subtitle: NSLocalizedString("EASY_ACCESS_TEXT", comment: ""), color: Color(NSColor(hex: "\(customColor)") ?? NSColor.controlAccentColor))
                     
-                    FeatureView(image: "lifepreserver", title: NSLocalizedString("Get in touch", comment: ""), subtitle: NSLocalizedString("GET_IN_TOUCH_TEXT", comment: ""), color: Color(NSColor(hex: "\(customColor)") ?? NSColor.controlAccentColor))
+                    FeatureView(image: "hand.wave", title: NSLocalizedString("Get in touch", comment: ""), subtitle: NSLocalizedString("GET_IN_TOUCH_TEXT", comment: ""), color: Color(NSColor(hex: "\(customColor)") ?? NSColor.controlAccentColor))
                                         
                 }
                 

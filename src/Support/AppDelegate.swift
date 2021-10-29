@@ -109,7 +109,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @objc func setStatusBarIcon() {
         
         // Define the default menu bar icon
-        let defaultSFSymbol = NSImage(systemSymbolName: "lifepreserver", accessibilityDescription: nil)
+        let defaultSFSymbol = NSImage(systemSymbolName: "hand.wave", accessibilityDescription: nil)
         let config = NSImage.SymbolConfiguration(textStyle: .body, scale: .large)
         let defaultSFSymbolImage = defaultSFSymbol?.withSymbolConfiguration(config)
         

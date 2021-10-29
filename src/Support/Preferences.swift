@@ -18,7 +18,7 @@ class Preferences: ObservableObject {
     // MARK: - General
     
     // Title shown in the top of the app
-    @AppStorage("Title") var title: String = "Handi"
+    @AppStorage("Title") var title: String = "RUQE"
     
     // Custom color for all symbols
     @AppStorage("CustomColor") var customColor: String = ""
@@ -36,7 +36,7 @@ class Preferences: ObservableObject {
     @AppStorage("HideQuit") var hideQuit: Bool = true
     
     // Text shown at the bottom as footnote
-    @AppStorage("FooterText") var footerText = ""
+    @AppStorage("FooterText") var footerText = "Powered By: Black Glove Inc."
     
     // MARK: - Info items
     

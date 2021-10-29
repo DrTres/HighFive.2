@@ -55,7 +55,7 @@ struct UptimeSubview: View {
     var body: some View {
         
         if hoverEffectEnabled {
-            InfoItem(title: NSLocalizedString("Last Reboot", comment: ""), subtitle: "\(computerinfo.uptimeRounded) \(computerinfo.uptimeText) " + NSLocalizedString("ago", comment: ""), image: "clock.fill", symbolColor: Color(NSColor(hex: "\(customColor)") ?? NSColor.controlAccentColor), notificationBadge: computerinfo.uptimeLimitReached, hoverEffectEnable: true)
+            InfoItem(title: NSLocalizedString("Uptime", comment: ""), subtitle: "\(computerinfo.uptimeRounded) \(computerinfo.uptimeText) " + NSLocalizedString("ago", comment: ""), image: "clock", symbolColor: Color(NSColor(hex: "\(customColor)") ?? NSColor.controlAccentColor), notificationBadge: computerinfo.uptimeLimitReached, hoverEffectEnable: true)
                 .alert(isPresented: $uptimeAlert) {
                     Alert(title: Text(NSLocalizedString("RESTART_REGULARLY", comment: "")), message: Text(alertText), dismissButton: .default(Text("OK")))
                 }
@@ -65,7 +65,7 @@ struct UptimeSubview: View {
                     }
                 }
         } else {
-            InfoItem(title: NSLocalizedString("Last Reboot", comment: ""), subtitle: "\(computerinfo.uptimeRounded) \(computerinfo.uptimeText) " + NSLocalizedString("ago", comment: ""), image: "clock.fill", symbolColor: Color(NSColor(hex: "\(customColor)") ?? NSColor.controlAccentColor), notificationBadge: false, hoverEffectEnable: false)
+            InfoItem(title: NSLocalizedString("Uptime", comment: ""), subtitle: "\(computerinfo.uptimeRounded) \(computerinfo.uptimeText) " + NSLocalizedString("", comment: ""), image: "clock", symbolColor: Color(NSColor(hex: "\(customColor)") ?? NSColor.controlAccentColor), notificationBadge: false, hoverEffectEnable: false)
         }
     }
 }
