@@ -77,7 +77,7 @@ class Preferences: ObservableObject {
     // UserDefaults for button right (3rd row) with default values
     @AppStorage("FirstRowTitleRight") var firstRowTitleRight: String = "Maintaince Request"
     @AppStorage("FirstRowSubtitleRight") var firstRowSubtitleRight: String = ""
-    @AppStorage("FirstRowTypeRight") var firstRowTypeRight: String = "App"
+    @AppStorage("FirstRowTypeRight") var firstRowTypeRight: String = "URL"
     @AppStorage("FirstRowLinkRight") var firstRowLinkRight: String = "https://support.apple.com"
     @AppStorage("FirstRowSymbolRight") var firstRowSymbolRight: String = "wrench.and.screwdriver"
     
@@ -87,22 +87,22 @@ class Preferences: ObservableObject {
     @AppStorage("SecondRowTitleLeft") var secondRowTitleLeft: String = "Support Ticket"
     @AppStorage("SecondRowSubtitleLeft") var secondRowSubtitleLeft: String = ""
     @AppStorage("SecondRowTypeLeft") var secondRowTypeLeft: String = "URL"
-    @AppStorage("SecondRowLinkLeft") var secondRowLinkLeft: String = "https://yourticketsystem.tld"
+    @AppStorage("SecondRowLinkLeft") var secondRowLinkLeft: String = "https://auth.blackglove.com/u/login/identifier?state=hKFo2SBJVDN2MnRkaTIwMHZxaERWRUFYV0J1bGd2YWJYdGd2RqFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIC1QQjhoRE1tN1JMVV92amhuMVVJQ2ItMjhYbWdFbUplo2NpZNkgaWtES0xUTlFxYjNDa3ZUWjlqbzVUMUsyb0QxWExjZEM"
     @AppStorage("SecondRowSymbolLeft") var secondRowSymbolLeft: String = "ticket"
     
     // UserDefaults for optional button middle (4th row) with default values
-    @AppStorage("SecondRowTitleMiddle") var secondRowTitleMiddle: String = ""
+    @AppStorage("SecondRowTitleMiddle") var secondRowTitleMiddle: String = "Email"
     @AppStorage("SecondRowSubtitleMiddle") var secondRowSubtitleMiddle: String = ""
     @AppStorage("SecondRowTypeMiddle") var secondRowTypeMiddle: String = "URL"
     @AppStorage("SecondRowLinkMiddle") var secondRowLinkMiddle: String = ""
-    @AppStorage("SecondRowSymbolMiddle") var secondRowSymbolMiddle: String = ""
+    @AppStorage("SecondRowSymbolMiddle") var secondRowSymbolMiddle: String = "envelope"
     
     // UserDefaults for button right (4th row) with default values
-    @AppStorage("SecondRowTitleRight") var secondRowTitleRight: String = "Phone"
+    @AppStorage("SecondRowTitleRight") var secondRowTitleRight: String = "BG Phone"
     @AppStorage("SecondRowSubtitleRight") var secondRowSubtitleRight: String = ""
     @AppStorage("SecondRowTypeRight") var secondRowTypeRight: String = "URL"
-    @AppStorage("SecondRowLinkRight") var secondRowLinkRight: String = "tel:+31000000000"
-    @AppStorage("SecondRowSymbolRight") var secondRowSymbolRight: String = "phone"
+    @AppStorage("SecondRowLinkRight") var secondRowLinkRight: String = "tel:+17043058748"
+    @AppStorage("SecondRowSymbolRight") var secondRowSymbolRight: String = "phone.arrow.up.right"
  
     // MARK: - Non MDM preferences
     
