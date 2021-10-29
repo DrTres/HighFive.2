@@ -27,7 +27,7 @@ class Preferences: ObservableObject {
     @AppStorage("CustomColorDarkMode") var customColorDarkMode: String = ""
     
     // Custom error message
-    @AppStorage("ErrorMessage") var errorMessage: String = NSLocalizedString("Please contact IT support", comment: "")
+    @AppStorage("ErrorMessage") var errorMessage: String = NSLocalizedString("Please Contact IT Support", comment: "")
     
     // Show optional welcome screen
     @AppStorage("ShowWelcomeScreen") var showWelcomeScreen = false
