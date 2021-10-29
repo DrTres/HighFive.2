@@ -253,7 +253,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             closePopover(sender: nil)
 
             // FIXME: Old deprecated API
-            statusBarItem?.popUpMenu(menu)
+            
             
             // FIXME: Could not get new API to work correctly
 //            statusBarItem.menu = menu // add menu to button...
