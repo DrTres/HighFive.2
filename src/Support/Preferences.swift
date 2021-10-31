@@ -18,7 +18,7 @@ class Preferences: ObservableObject {
     // MARK: - General
     
     // Title shown in the top of the app
-    @AppStorage("Title") var title: String = "RUQE"
+    @AppStorage("Title") var title: String = "Support Help Desk"
     
     // Custom color for all symbols
     @AppStorage("CustomColor") var customColor: String = ""
