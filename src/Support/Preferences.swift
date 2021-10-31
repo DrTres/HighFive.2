@@ -36,7 +36,7 @@ class Preferences: ObservableObject {
     @AppStorage("HideQuit") var hideQuit: Bool = true
     
     // Text shown at the bottom as footnote
-    @AppStorage("FooterText") var footerText = "Powered By: Black Glove Inc."
+    @AppStorage("FooterText") var footerText = "Powered By: Black Glove Inc. 👋🏿 v. 1.0"
     
     // MARK: - Info items
     
@@ -62,21 +62,21 @@ class Preferences: ObservableObject {
     
     // UserDefaults for button left (3rd row) with default values
     @AppStorage("FirstRowTitleLeft") var firstRowTitleLeft: String = "Zoom"
-    @AppStorage("FirstRowSubtitleLeft") var firstRowSubtitleLeft: String = ""
+    @AppStorage("FirstRowSubtitleLeft") var firstRowSubtitleLeft: String = "Remote Screen Share"
     @AppStorage("FirstRowTypeLeft") var firstRowTypeLeft: String = "URL"
     @AppStorage("FirstRowLinkLeft") var firstRowLinkLeft: String = "https://zoom.us/s/6376466059#success"
     @AppStorage("FirstRowSymbolLeft") var firstRowSymbolLeft: String = "video.fill"
     
     // UserDefaults for optional button middle (3th row)
     @AppStorage("FirstRowTitleMiddle") var firstRowTitleMiddle: String = "Black Glove Inc."
-    @AppStorage("FirstRowSubtitleMiddle") var firstRowSubtitleMiddle: String = ""
+    @AppStorage("FirstRowSubtitleMiddle") var firstRowSubtitleMiddle: String = "BG Home Page"
     @AppStorage("FirstRowTypeMiddle") var firstRowTypeMiddle: String = "URL"
     @AppStorage("FirstRowLinkMiddle") var firstRowLinkMiddle: String = "https://blackglove.com"
     @AppStorage("FirstRowSymbolMiddle") var firstRowSymbolMiddle: String = "hand.wave"
 
     // UserDefaults for button right (3rd row) with default values
     @AppStorage("FirstRowTitleRight") var firstRowTitleRight: String = "Maintaince Request"
-    @AppStorage("FirstRowSubtitleRight") var firstRowSubtitleRight: String = ""
+    @AppStorage("FirstRowSubtitleRight") var firstRowSubtitleRight: String = "Hardware Request"
     @AppStorage("FirstRowTypeRight") var firstRowTypeRight: String = "URL"
     @AppStorage("FirstRowLinkRight") var firstRowLinkRight: String = "https://support.apple.com"
     @AppStorage("FirstRowSymbolRight") var firstRowSymbolRight: String = "wrench.and.screwdriver"
@@ -85,21 +85,21 @@ class Preferences: ObservableObject {
     
     // UserDefaults for button left (4th row) with default values
     @AppStorage("SecondRowTitleLeft") var secondRowTitleLeft: String = "Support Ticket"
-    @AppStorage("SecondRowSubtitleLeft") var secondRowSubtitleLeft: String = ""
+    @AppStorage("SecondRowSubtitleLeft") var secondRowSubtitleLeft: String = "Software Request"
     @AppStorage("SecondRowTypeLeft") var secondRowTypeLeft: String = "URL"
     @AppStorage("SecondRowLinkLeft") var secondRowLinkLeft: String = "https://auth.blackglove.com/u/login/identifier?state=hKFo2SBJVDN2MnRkaTIwMHZxaERWRUFYV0J1bGd2YWJYdGd2RqFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIC1QQjhoRE1tN1JMVV92amhuMVVJQ2ItMjhYbWdFbUplo2NpZNkgaWtES0xUTlFxYjNDa3ZUWjlqbzVUMUsyb0QxWExjZEM"
     @AppStorage("SecondRowSymbolLeft") var secondRowSymbolLeft: String = "ticket"
     
     // UserDefaults for optional button middle (4th row) with default values
-    @AppStorage("SecondRowTitleMiddle") var secondRowTitleMiddle: String = "Email"
-    @AppStorage("SecondRowSubtitleMiddle") var secondRowSubtitleMiddle: String = ""
-    @AppStorage("SecondRowTypeMiddle") var secondRowTypeMiddle: String = "URL"
+    @AppStorage("SecondRowTitleMiddle") var secondRowTitleMiddle: String = "Secure Lock"
+    @AppStorage("SecondRowSubtitleMiddle") var secondRowSubtitleMiddle: String = "Change Password"
+    @AppStorage("SecondRowTypeMiddle") var secondRowTypeMiddle: String = "App"
     @AppStorage("SecondRowLinkMiddle") var secondRowLinkMiddle: String = ""
-    @AppStorage("SecondRowSymbolMiddle") var secondRowSymbolMiddle: String = "envelope"
+    @AppStorage("SecondRowSymbolMiddle") var secondRowSymbolMiddle: String = "lock.fill"
     
     // UserDefaults for button right (4th row) with default values
     @AppStorage("SecondRowTitleRight") var secondRowTitleRight: String = "BG Phone"
-    @AppStorage("SecondRowSubtitleRight") var secondRowSubtitleRight: String = ""
+    @AppStorage("SecondRowSubtitleRight") var secondRowSubtitleRight: String = "Customer Sucess"
     @AppStorage("SecondRowTypeRight") var secondRowTypeRight: String = "URL"
     @AppStorage("SecondRowLinkRight") var secondRowLinkRight: String = "tel:+17043058748"
     @AppStorage("SecondRowSymbolRight") var secondRowSymbolRight: String = "phone.arrow.up.right"
