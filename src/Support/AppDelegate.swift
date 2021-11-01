@@ -93,7 +93,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         // Create menu items for right click
         menu.addItem(NSMenuItem(title: NSLocalizedString("About Support", comment: ""), action: #selector(AppDelegate.showAbout), keyEquivalent: "i"))
-//        menu.addItem(NSMenuItem(title: NSLocalizedString("Help and Documentation", comment: ""), action: #selector(AppDelegate.openDocumentation), keyEquivalent: "h"))
+    menu.addItem(NSMenuItem(title: NSLocalizedString("Help and Documentation", comment: ""), action: #selector(AppDelegate.openDocumentation), keyEquivalent: "h"))
         menu.addItem(NSMenuItem.separator())
         menu.addItem(NSMenuItem(title: NSLocalizedString("Quit Support", comment: ""), action: #selector(NSApplication.shared.terminate(_:)), keyEquivalent: "q"))
                 

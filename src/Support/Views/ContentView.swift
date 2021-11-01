@@ -49,19 +49,19 @@ struct ContentView: View {
                 QuitButton()
             }
             
-      //     HStack {
-    //            Spacer()
+   //      HStack {
+     //           Spacer()
                
-     //    VStack {
-        // Spacer()
-     //            Image(systemName: "ellipsis.circle.fill")
-         //              .imageScale(.large)
+       //  VStack {
+         //Spacer()
+        //        Image(systemName: "ellipsis.circle.fill")
+           //           .imageScale(.large)
              
-   //      }
-  //        }
-   //        .padding(8)
+       //  }
+        // }
+          // .padding(8)
             
-            VStack(spacing: 10) {
+          VStack(spacing: 10) {
                 
                 // MARK: - Horizontal stack with Title and Logo
                 HStack(spacing: 10) {

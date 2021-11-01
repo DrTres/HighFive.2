@@ -87,17 +87,17 @@ struct ChangePassword: View {
         
         VStack {
             
-//            HStack {
-//                Text("Change your Mac password").font(.system(.body, design: .rounded)).fontWeight(.medium)
-//                Spacer()
-//            }
+         HStack {
+             Text("Change your Mac password").font(.system(.body, design: .rounded)).fontWeight(.medium)
+              Spacer()
+         }
                     
             HStack {
                 
                 Button(action: {
-//                    withAnimation(.easeInOut) {
+                  withAnimation(.easeInOut) {
                         computerinfo.showPasswordChange.toggle()
-//                    }
+                  }
                 }) {
                     Image(systemName: "arrow.left.circle")
                         .imageScale(.large)
@@ -106,7 +106,7 @@ struct ChangePassword: View {
                 
                 Spacer()
             }
-//            .padding(.leading, 16.0)
+          .padding(.leading, 16.0)
             
             HStack {
                 Text("Old Password").font(.system(.body, design: .rounded)).fontWeight(.medium)

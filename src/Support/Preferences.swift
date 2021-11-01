@@ -18,7 +18,7 @@ class Preferences: ObservableObject {
     // MARK: - General
     
     // Title shown in the top of the app
-    @AppStorage("Title") var title: String = "Support Help Desk"
+    @AppStorage("Title") var title: String = "Black Glove Support"
     
     // Custom color for all symbols
     @AppStorage("CustomColor") var customColor: String = ""
@@ -47,10 +47,10 @@ class Preferences: ObservableObject {
     @AppStorage("InfoItemFour") var infoItemFour: String = "Storage"
     
     // Days of uptime after which a notification badge is shown, disabled by default
-    @AppStorage("UptimeDaysLimit") var uptimeDaysLimit: Int = 0
+    @AppStorage("UptimeDaysLimit") var uptimeDaysLimit: Int = 1
     
     // Days until password expiry shows a notification badge is shown, disabled by default
-    @AppStorage("PasswordExpiryLimit") var passwordExpiryLimit: Int = 0
+    @AppStorage("PasswordExpiryLimit") var passwordExpiryLimit: Int = 1
     
     // Text to show in Password info item
     @AppStorage("PasswordLabel") var passwordLabel: String = "Mac " + NSLocalizedString("Password", comment: "")
@@ -107,6 +107,6 @@ class Preferences: ObservableObject {
     // MARK: - Non MDM preferences
     
     // Boolean to hide the welcome screen after the first time. Should not be managed using MDM.
-    @AppStorage("HasSeenWelcomeScreen") var hasSeenWelcomeScreen = true
+    @AppStorage("HasSeenWelcomeScreen") var hasSeenWelcomeScreen = false
     
 }

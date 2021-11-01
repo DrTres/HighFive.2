@@ -120,8 +120,8 @@ struct WelcomeView: View {
                 .opacity(hoverButton ? 0.5 : 1.0)
                 .cornerRadius(10)
                 .onTapGesture {
-//                    preferences.showWelcomeScreen.toggle()
-                    preferences.hasSeenWelcomeScreen.toggle()
+                    preferences.showWelcomeScreen.toggle()
+//                    preferences.hasSeenWelcomeScreen.toggle()
                     
                 }
                 .onHover {_ in

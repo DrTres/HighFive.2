@@ -15,7 +15,7 @@ struct QuitButton: View {
         
         VStack {
             HStack {
-                Image(systemName: "xmark.circle.fill")
+                Image(systemName: "xmark.circle")
                     .padding(4)
                     .onTapGesture {
                         self.quitPressed = true

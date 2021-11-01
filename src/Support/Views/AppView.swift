@@ -19,6 +19,7 @@ struct AppView: View {
         } else {
             ContentView()
         }
+        
     }
 }
 

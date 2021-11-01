@@ -26,12 +26,12 @@ struct FeatureView: View {
             VStack(alignment: .leading, spacing: 2) {
                 Text(title)
                     .font(.system(.body, design: .rounded)).fontWeight(.medium)
-//                    .font(.system(.headline, design: .rounded))
-//                    .fontWeight(.bold)
+                    .font(.system(.headline, design: .rounded))
+                    .fontWeight(.bold)
                 Text(subtitle)
                     .font(.system(.subheadline, design: .rounded))
-//                    .font(.system(.subheadline, design: .rounded))
-//                    .fontWeight(.semibold)
+                    .font(.system(.subheadline, design: .rounded))
+                    .fontWeight(.semibold)
                     .foregroundColor(.secondary)
             }
             

@@ -37,7 +37,7 @@ struct ItemDouble: View {
     @ObservedObject var preferences = Preferences()
     
     // Enable animation
-    //    var animate: Bool
+    // var animate: Bool
     
     var body: some View {
         
