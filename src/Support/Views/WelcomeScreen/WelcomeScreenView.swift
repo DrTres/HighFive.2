@@ -95,11 +95,15 @@ struct WelcomeView: View {
                 
                 VStack(alignment: .leading, spacing: 10) {
                                         
-                    FeatureView(image: "stethoscope", title: NSLocalizedString("Mac diagnosis", comment: ""), subtitle: NSLocalizedString("MAC_DIAGNOSIS_TEXT", comment: ""), color: Color(NSColor(hex: "\(customColor)") ?? NSColor.controlAccentColor))
                     
-                    FeatureView(image: "briefcase", title: NSLocalizedString("Easy access", comment: ""), subtitle: NSLocalizedString("EASY_ACCESS_TEXT", comment: ""), color: Color(NSColor(hex: "\(customColor)") ?? NSColor.controlAccentColor))
                     
-                    FeatureView(image: "hand.wave", title: NSLocalizedString("Get in touch", comment: ""), subtitle: NSLocalizedString("GET_IN_TOUCH_TEXT", comment: ""), color: Color(NSColor(hex: "\(customColor)") ?? NSColor.controlAccentColor))
+                    FeatureView(image: "applelogo", title: NSLocalizedString("Easy access", comment: ""), subtitle: NSLocalizedString("EASY_ACCESS_TEXT", comment: ""), color: Color(NSColor(hex: "\(customColor)") ?? NSColor.controlAccentColor))
+                    
+                    FeatureView(image: "desktopcomputer.trianglebadge.exclamationmark", title: NSLocalizedString("Mac diagnosis", comment: ""), subtitle: NSLocalizedString("MAC_DIAGNOSIS_TEXT", comment: ""), color: Color(NSColor(hex: "\(customColor)") ?? NSColor.controlAccentColor))
+                    
+                    FeatureView(image: "ticket", title: NSLocalizedString("Support Ticket", comment: ""), subtitle: NSLocalizedString("Easily generate tickets for software support", comment: ""), color: Color(NSColor(hex: "\(customColor)") ?? NSColor.controlAccentColor))
+                    
+                    FeatureView(image: "wrench.and.screwdriver", title: NSLocalizedString("Maintance Request", comment: ""), subtitle: NSLocalizedString("Easily submit tickets for hardware request", comment: ""), color: Color(NSColor(hex: "\(customColor)") ?? NSColor.controlAccentColor))
                                         
                 }
                 

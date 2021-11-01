@@ -30,13 +30,13 @@ class Preferences: ObservableObject {
     @AppStorage("ErrorMessage") var errorMessage: String = NSLocalizedString("Please Contact IT Support", comment: "")
     
     // Show optional welcome screen
-    @AppStorage("ShowWelcomeScreen") var showWelcomeScreen = false
+    @AppStorage("ShowWelcomeScreen") var showWelcomeScreen = true
     
     // Hide Quit Button. Set to FALSE by default in MAS version. Set to TRUE by default in Non-MAS version
-    @AppStorage("HideQuit") var hideQuit: Bool = true
+    @AppStorage("HideQuit") var hideQuit: Bool = false
     
     // Text shown at the bottom as footnote
-    @AppStorage("FooterText") var footerText = "Powered By: Black Glove Inc. 👋🏿 v. 1.0"
+    @AppStorage("FooterText") var footerText = "Powered By: Black Glove Inc. 👋🏿    v. 1.0"
     
     // MARK: - Info items
     
@@ -91,10 +91,10 @@ class Preferences: ObservableObject {
     @AppStorage("SecondRowSymbolLeft") var secondRowSymbolLeft: String = "ticket"
     
     // UserDefaults for optional button middle (4th row) with default values
-    @AppStorage("SecondRowTitleMiddle") var secondRowTitleMiddle: String = "Secure Lock"
+    @AppStorage("SecondRowTitleMiddle") var secondRowTitleMiddle: String = "Password"
     @AppStorage("SecondRowSubtitleMiddle") var secondRowSubtitleMiddle: String = "Change Password"
-    @AppStorage("SecondRowTypeMiddle") var secondRowTypeMiddle: String = "App"
-    @AppStorage("SecondRowLinkMiddle") var secondRowLinkMiddle: String = ""
+    @AppStorage("SecondRowTypeMiddle") var secondRowTypeMiddle: String = "Command"
+    @AppStorage("SecondRowLinkMiddle") var secondRowLinkMiddle: String = "open /System/Library/PreferencePanes/Accounts.prefPane"
     @AppStorage("SecondRowSymbolMiddle") var secondRowSymbolMiddle: String = "lock.fill"
     
     // UserDefaults for button right (4th row) with default values
@@ -107,6 +107,6 @@ class Preferences: ObservableObject {
     // MARK: - Non MDM preferences
     
     // Boolean to hide the welcome screen after the first time. Should not be managed using MDM.
-    @AppStorage("HasSeenWelcomeScreen") var hasSeenWelcomeScreen = false
+    @AppStorage("HasSeenWelcomeScreen") var hasSeenWelcomeScreen = true
     
 }

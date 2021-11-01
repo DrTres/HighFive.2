@@ -42,7 +42,7 @@ class UserInfo: ObservableObject {
         DispatchQueue.global().async { [self] in
             do {
                 let node = try ODNode.init(session: session, type: UInt32(kODNodeTypeAuthentication))
-                //            let node = try ODNode.init(session: session, type: UInt32(kODNodeTypeLocalNodes))
+                //        let node = try ODNode.init(session: session, type: UInt32(kODNodeTypeLocalNodes))
                 let query = try ODQuery.init(node: node, forRecordTypes: kODRecordTypeUsers, attribute: kODAttributeTypeRecordName, matchType: UInt32(kODMatchEqualTo), queryValues: currentConsoleUserName, returnAttributes: kODAttributeTypeNativeOnly, maximumResults: 0)
                 records = try query.resultsAllowingPartial(false) as! [ODRecord]
             } catch {
@@ -122,7 +122,7 @@ class UserInfo: ObservableObject {
     func changePassword() {
         do {
             let node = try ODNode.init(session: session, type: UInt32(kODNodeTypeAuthentication))
-//            let node = try ODNode.init(session: session, type: UInt32(kODNodeTypeLocalNodes))
+   //    let node = try ODNode.init(session: session, type: UInt32(kODNodeTypeLocalNodes))
             let query = try ODQuery.init(node: node, forRecordTypes: kODRecordTypeUsers, attribute: kODAttributeTypeRecordName, matchType: UInt32(kODMatchEqualTo), queryValues: currentConsoleUserName, returnAttributes: kODAttributeTypeNativeOnly, maximumResults: 0)
             records = try query.resultsAllowingPartial(false) as! [ODRecord]
         } catch {

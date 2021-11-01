@@ -49,16 +49,17 @@ struct ContentView: View {
                 QuitButton()
             }
             
-//            HStack {
-//                Spacer()
-//
-//                VStack {
-//                    Spacer()
-//                    Image(systemName: "ellipsis.circle.fill")
-//                        .imageScale(.large)
-//                }
-//            }
-//            .padding(8)
+      //     HStack {
+    //            Spacer()
+               
+     //    VStack {
+        // Spacer()
+     //            Image(systemName: "ellipsis.circle.fill")
+         //              .imageScale(.large)
+             
+   //      }
+  //        }
+   //        .padding(8)
             
             VStack(spacing: 10) {
                 
