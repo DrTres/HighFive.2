@@ -109,7 +109,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @objc func setStatusBarIcon() {
         
         // Define the default menu bar icon
-        let defaultSFSymbol = NSImage(systemSymbolName: "hand.wave", accessibilityDescription: nil)
+        let defaultSFSymbol = NSImage(systemSymbolName: "bghand", accessibilityDescription: nil)
         let config = NSImage.SymbolConfiguration(textStyle: .body, scale: .large)
         let defaultSFSymbolImage = defaultSFSymbol?.withSymbolConfiguration(config)
         
@@ -117,8 +117,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         if let button = statusBarItem?.button {
             
             // Use custom status bar icon if set in UserDefaults with fallback to default icon
-            if defaults.string(forKey: "StatusBarIcon") != nil {
-                if let customIcon = NSImage(contentsOfFile: defaults.string(forKey: "StatusBarIcon")!) {
+            if defaults.string(forKey: "bghand") != nil {
+                if let customIcon = NSImage(contentsOfFile: defaults.string(forKey: "bghand")!) {
                     button.image = customIcon
                     // Render as template to make icon white and match system default
                     button.image?.isTemplate = true
