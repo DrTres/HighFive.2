@@ -36,8 +36,8 @@ class Preferences: ObservableObject {
     @AppStorage("HideQuit") var hideQuit: Bool = false
     
     // Text shown at the bottom as footnote
-    @AppStorage("FooterText") var footerText = "Powered By: Black Glove Inc. 👋🏿    v. 1.0"
-    
+    @AppStorage("FooterText") var footerText = "Powered By: Black Glove Inc.  v. 1.1"
+   
     // MARK: - Info items
     
     // Version 2.2 new preferences for modular info items

@@ -34,7 +34,7 @@ struct StorageSubview: View {
     
     var body: some View {
         
-        ProgressBarItem(percentageUsed: "\(computerinfo.capacityPercentageRounded)% " + NSLocalizedString("Used", comment: ""), storageAvailable: "\(computerinfo.capacityRounded) " + NSLocalizedString("Available", comment: ""), image: "internaldrive.fill", symbolColor: Color(NSColor(hex: "\(customColor)") ?? NSColor.controlAccentColor), notificationBadgeBool: computerinfo.storageLimitReached, percentage: computerinfo.capacityPercentage, hoverEffectEnable: true)
+        ProgressBarItem(percentageUsed: "\(computerinfo.capacityPercentageRounded)% " + NSLocalizedString("Used", comment: ""), storageAvailable: "\(computerinfo.capacityRounded) " + NSLocalizedString("Available", comment: ""), image: "externaldrive.fill.badge.person.crop", symbolColor: Color(NSColor(hex: "\(customColor)") ?? NSColor.controlAccentColor), notificationBadgeBool: computerinfo.storageLimitReached, percentage: computerinfo.capacityPercentage, hoverEffectEnable: true)
         
     }
 }

@@ -109,7 +109,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @objc func setStatusBarIcon() {
         
         // Define the default menu bar icon
-        let defaultSFSymbol = NSImage(systemSymbolName: "bghand", accessibilityDescription: nil)
+       let defaultSFSymbol = NSImage(systemSymbolName: "hand.wave", accessibilityDescription: nil)
         let config = NSImage.SymbolConfiguration(textStyle: .body, scale: .large)
         let defaultSFSymbolImage = defaultSFSymbol?.withSymbolConfiguration(config)
         
@@ -124,7 +124,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                     button.image?.isTemplate = true
                     logger.debug("StatusBarIcon preference key is set")
                 } else {
-                    button.image = defaultSFSymbolImage
+                   button.image = defaultSFSymbolImage
                     logger.error("StatusBarIcon preference key is set, but no valid image was found. Please check file path/name or permissions. Falling back to default image...")
                 }
                 // Use custom status bar icon using SF Symbols if set in UserDefaults with fallback to default icon
@@ -140,13 +140,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                     logger.debug("StatusBarIconSFSymbol preference key is set")
                     
                 } else {
-                    button.image = defaultSFSymbolImage
+                  button.image = defaultSFSymbolImage
                     logger.error("StatusBarIconSFSymbol preference key is set, but no valid SF Symbol name was found. Falling back to default image...")
                 }
                 
                 // Use default icon in all other cases
             } else {
-                button.image = defaultSFSymbolImage
+               button.image = defaultSFSymbolImage
                 logger.debug("No preference key is set, using default image...")
             }
             
