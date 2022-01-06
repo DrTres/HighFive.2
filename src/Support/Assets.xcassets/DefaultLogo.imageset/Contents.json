@@ -8,20 +8,10 @@
       "appearances" : [
         {
           "appearance" : "luminosity",
-          "value" : "light"
-        }
-      ],
-      "filename" : "bghands_250px_light.png",
-      "idiom" : "universal"
-    },
-    {
-      "appearances" : [
-        {
-          "appearance" : "luminosity",
           "value" : "dark"
         }
       ],
-      "filename" : "bghands_250px_dark.png",
+      "filename" : "bghands_250px_light.png",
       "idiom" : "universal"
     }
   ],
