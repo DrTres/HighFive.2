@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "bghands_JC_250px_light.png",
+      "filename" : "bghands_250px_light.png",
       "idiom" : "universal"
     },
     {
@@ -11,7 +11,7 @@
           "value" : "dark"
         }
       ],
-      "filename" : "bghands_250px_light.png",
+      "filename" : "bg gray hands.png",
       "idiom" : "universal"
     }
   ],

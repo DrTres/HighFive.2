@@ -31,7 +31,7 @@ struct ContentView: View {
     var customColor: String {
         if colorScheme == .light && defaults.string(forKey: "CustomColor") != nil {
             return preferences.customColor
-        } else if colorScheme == .light && defaults.string(forKey: "CustomColorDarkMode") != nil {
+        } else if colorScheme == .dark && defaults.string(forKey: "CustomColorDarkMode") != nil {
             return preferences.customColorDarkMode
         } else {
             return preferences.customColor
@@ -77,7 +77,7 @@ struct ContentView: View {
                             .scaledToFit()
                             .frame(height: 48)
                     // Show different logo in Dark Mode when LogoDarkMode is also set
-                    } else if colorScheme == .light && defaults.string(forKey: "Logo") != nil {
+                    } else if colorScheme == .dark && defaults.string(forKey: "Logo") != nil {
                         if defaults.string(forKey: "LogoDarkMode") != nil {
                             Image(nsImage: (NSImage(contentsOfFile: defaults.string(forKey: "LogoDarkMode")!) ?? NSImage(named: "DefaultLogo"))!)
                                 .resizable()
@@ -187,7 +187,7 @@ struct ContentView: View {
                     case "Uptime":
                         UptimeSubview()
                     default:
-                        StorageSubview()
+                       PasswordSubview()
                     }
                 }
                 .padding(.horizontal, 10)

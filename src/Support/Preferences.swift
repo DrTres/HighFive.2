@@ -3,7 +3,7 @@
 //  Root3 Support
 //
 //  Created by Jordy Witteman on 31/07/2020.
-//
+//  Edited by Tres Reeves on 10/1/2021
 
 import Foundation
 import SwiftUI
@@ -30,7 +30,7 @@ class Preferences: ObservableObject {
     @AppStorage("ErrorMessage") var errorMessage: String = NSLocalizedString("Please Contact IT Support", comment: "")
     
     // Show optional welcome screen
-    @AppStorage("ShowWelcomeScreen") var showWelcomeScreen = false
+    @AppStorage("ShowWelcomeScreen") var showWelcomeScreen = true
     
     // Hide Quit Button. Set to FALSE by default in MAS version. Set to TRUE by default in Non-MAS version
     @AppStorage("HideQuit") var hideQuit: Bool = false
@@ -43,8 +43,9 @@ class Preferences: ObservableObject {
     // Version 2.2 new preferences for modular info items
     @AppStorage("InfoItemOne") var infoItemOne: String = "ComputerName"
     @AppStorage("InfoItemTwo") var infoItemTwo: String = "MacOSVersion"
-    @AppStorage("InfoItemThree") var infoItemThree: String = "Uptime"
+    @AppStorage("InfoItemThree") var infoItemThree: String = "Network"
     @AppStorage("InfoItemFour") var infoItemFour: String = "Storage"
+    
     
     // Days of uptime after which a notification badge is shown, disabled by default
     @AppStorage("UptimeDaysLimit") var uptimeDaysLimit: Int = 1
@@ -61,48 +62,50 @@ class Preferences: ObservableObject {
     // MARK: - First row of configurable buttons
     
     // UserDefaults for button left (3rd row) with default values
-    @AppStorage("FirstRowTitleLeft") var firstRowTitleLeft: String = "Zoom"
+    @AppStorage("FirstRowTitleLeft") var firstRowTitleLeft: String = "Student Portal"
     @AppStorage("FirstRowSubtitleLeft") var firstRowSubtitleLeft: String = ""
     @AppStorage("FirstRowTypeLeft") var firstRowTypeLeft: String = "URL"
-    @AppStorage("FirstRowLinkLeft") var firstRowLinkLeft: String = "https://zoom.us/s/6376466059#success"
-    @AppStorage("FirstRowSymbolLeft") var firstRowSymbolLeft: String = "video.fill"
+    @AppStorage("FirstRowLinkLeft") var firstRowLinkLeft: String = "https://www.asdk12.org"
+    @AppStorage("FirstRowSymbolLeft") var firstRowSymbolLeft: String = "person.crop.circle.badge.plus"
     
     // UserDefaults for optional button middle (3th row)
-    @AppStorage("FirstRowTitleMiddle") var firstRowTitleMiddle: String = "System Request"
+    @AppStorage("FirstRowTitleMiddle") var firstRowTitleMiddle: String = ""
     @AppStorage("FirstRowSubtitleMiddle") var firstRowSubtitleMiddle: String = ""
     @AppStorage("FirstRowTypeMiddle") var firstRowTypeMiddle: String = "URL"
-    @AppStorage("FirstRowLinkMiddle") var firstRowLinkMiddle: String = "https://www.zendesk.com"
-    @AppStorage("FirstRowSymbolMiddle") var firstRowSymbolMiddle: String = "laptopcomputer.trianglebadge.exclamationmark"
+    @AppStorage("FirstRowLinkMiddle") var firstRowLinkMiddle: String = ""
+    @AppStorage("FirstRowSymbolMiddle") var firstRowSymbolMiddle: String = ""
     
     // UserDefaults for button right (3rd row) with default values
-    @AppStorage("FirstRowTitleRight") var firstRowTitleRight: String = "BG Support Chat"
+    @AppStorage("FirstRowTitleRight") var firstRowTitleRight: String = "System Request"
     @AppStorage("FirstRowSubtitleRight") var firstRowSubtitleRight: String = ""
     @AppStorage("FirstRowTypeRight") var firstRowTypeRight: String = "URL"
-    @AppStorage("FirstRowLinkRight") var firstRowLinkRight: String = "tel:+7043058748"
-    @AppStorage("FirstRowSymbolRight") var firstRowSymbolRight: String = "message.and.waveform.fill"
+    @AppStorage("FirstRowLinkRight") var firstRowLinkRight: String = "https://www.zendesk.com"
+    @AppStorage("FirstRowSymbolRight") var firstRowSymbolRight: String = "laptopcomputer.trianglebadge.exclamationmark"
+    
+    
     
     // MARK: - Second row of configurable buttons
     
     // UserDefaults for button left (4th row) with default values
-    @AppStorage("SecondRowTitleLeft") var secondRowTitleLeft: String = "Studnet Portal"
+    @AppStorage("SecondRowTitleLeft") var secondRowTitleLeft: String = "BG Phone"
     @AppStorage("SecondRowSubtitleLeft") var secondRowSubtitleLeft: String = ""
     @AppStorage("SecondRowTypeLeft") var secondRowTypeLeft: String = "URL"
-    @AppStorage("SecondRowLinkLeft") var secondRowLinkLeft: String = "https://www.asdk12.org"
-    @AppStorage("SecondRowSymbolLeft") var secondRowSymbolLeft: String = "person.crop.circle.badge.plus"
+    @AppStorage("SecondRowLinkLeft") var secondRowLinkLeft: String = "tel:+7043058748"
+    @AppStorage("SecondRowSymbolLeft") var secondRowSymbolLeft: String = "phone.fill"
     
     // UserDefaults for optional button middle (4th row) with default values
-    @AppStorage("SecondRowTitleMiddle") var secondRowTitleMiddle: String = "Apple RSS Feed"
+    @AppStorage("SecondRowTitleMiddle") var secondRowTitleMiddle: String = ""
     @AppStorage("SecondRowSubtitleMiddle") var secondRowSubtitleMiddle: String = ""
-    @AppStorage("SecondRowTypeMiddle") var secondRowTypeMiddle: String = "URL"
-    @AppStorage("SecondRowLinkMiddle") var secondRowLinkMiddle: String = "https://www.apple.com/rss/"
-    @AppStorage("SecondRowSymbolMiddle") var secondRowSymbolMiddle: String = "waveform.path"
+    @AppStorage("SecondRowTypeMiddle") var secondRowTypeMiddle: String = ""
+    @AppStorage("SecondRowLinkMiddle") var secondRowLinkMiddle: String = "URL"
+    @AppStorage("SecondRowSymbolMiddle") var secondRowSymbolMiddle: String = " "
     
     // UserDefaults for button right (4th row) with default values
-    @AppStorage("SecondRowTitleRight") var secondRowTitleRight: String = ""
+    @AppStorage("SecondRowTitleRight") var secondRowTitleRight: String = "Anchorage RSS Feed"
     @AppStorage("SecondRowSubtitleRight") var secondRowSubtitleRight: String = ""
-    @AppStorage("SecondRowTypeRight") var secondRowTypeRight: String = ""
-    @AppStorage("SecondRowLinkRight") var secondRowLinkRight: String =  ""
-    @AppStorage("SecondRowSymbolRight") var secondRowSymbolRight: String = ""
+    @AppStorage("SecondRowTypeRight") var secondRowTypeRight: String = "URL"
+    @AppStorage("SecondRowLinkRight") var secondRowLinkRight: String =  "https://www.asdk12.org/Page/18624"
+    @AppStorage("SecondRowSymbolRight") var secondRowSymbolRight: String = "waveform.path"
  
     // MARK: - Non MDM preferences
     
@@ -110,3 +113,5 @@ class Preferences: ObservableObject {
     @AppStorage("HasSeenWelcomeScreen") var hasSeenWelcomeScreen = false
     
 }
+ 
+

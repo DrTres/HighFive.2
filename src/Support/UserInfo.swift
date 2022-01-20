@@ -80,11 +80,11 @@ class UserInfo: ObservableObject {
                             userPasswordExpiryString = NSLocalizedString("Never Expires", comment: "")
                             
                             // Show Password is expired
-                        } else if userPasswordExpires == 0 {
-                            userPasswordExpiryString = NSLocalizedString("Expired", comment: "")
+                     } else if userPasswordExpires == 0 {
+                          userPasswordExpiryString = NSLocalizedString("Expired", comment: "")
                             // Show x days until expiry
-                        } else {
-                            userPasswordExpiresInDays = Int(userPasswordExpires / 60 / 60 / 24)
+                      } else {
+                        userPasswordExpiresInDays = Int(userPasswordExpires / 60 / 60 / 24)
                             if userPasswordExpiresInDays > 1 {
                                 userPasswordExpiryString = (NSLocalizedString("Expires in ", comment: "") + "\(userPasswordExpiresInDays)" + NSLocalizedString(" days", comment: ""))
                             } else {
@@ -122,7 +122,7 @@ class UserInfo: ObservableObject {
     func changePassword() {
         do {
             let node = try ODNode.init(session: session, type: UInt32(kODNodeTypeAuthentication))
-   //    let node = try ODNode.init(session: session, type: UInt32(kODNodeTypeLocalNodes))
+   //   let node = try ODNode.init(session: session, type: UInt32(kODNodeTypeLocalNodes))
             let query = try ODQuery.init(node: node, forRecordTypes: kODRecordTypeUsers, attribute: kODAttributeTypeRecordName, matchType: UInt32(kODMatchEqualTo), queryValues: currentConsoleUserName, returnAttributes: kODAttributeTypeNativeOnly, maximumResults: 0)
             records = try query.resultsAllowingPartial(false) as! [ODRecord]
         } catch {

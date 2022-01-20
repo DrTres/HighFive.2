@@ -97,13 +97,14 @@ struct WelcomeView: View {
                                         
                     
                     
-                    FeatureView(image: "applelogo", title: NSLocalizedString("Easy access", comment: ""), subtitle: NSLocalizedString("EASY_ACCESS_TEXT", comment: ""), color: Color(NSColor(hex: "\(customColor)") ?? NSColor.controlAccentColor))
+                 
                     
                     FeatureView(image: "desktopcomputer.trianglebadge.exclamationmark", title: NSLocalizedString("Mac diagnosis", comment: ""), subtitle: NSLocalizedString("MAC_DIAGNOSIS_TEXT", comment: ""), color: Color(NSColor(hex: "\(customColor)") ?? NSColor.controlAccentColor))
                     
-                    FeatureView(image: "ticket", title: NSLocalizedString("Support Ticket", comment: ""), subtitle: NSLocalizedString("Easily generate tickets for software support", comment: ""), color: Color(NSColor(hex: "\(customColor)") ?? NSColor.controlAccentColor))
+                    FeatureView(image: "wrench.and.screwdriver", title: NSLocalizedString("System Request", comment: ""), subtitle: NSLocalizedString("Easily submit tickets for hardware request", comment: ""), color: Color(NSColor(hex: "\(customColor)") ?? NSColor.controlAccentColor))
                     
-                    FeatureView(image: "wrench.and.screwdriver", title: NSLocalizedString("Maintance Request", comment: ""), subtitle: NSLocalizedString("Easily submit tickets for hardware request", comment: ""), color: Color(NSColor(hex: "\(customColor)") ?? NSColor.controlAccentColor))
+                    FeatureView(image: "waveform.path", title: NSLocalizedString("RSS Feed", comment: ""), subtitle: NSLocalizedString("Stay up to to date with the lastest news", comment: ""), color: Color(NSColor(hex: "\(customColor)") ?? NSColor.controlAccentColor))
+
                                         
                 }
                 

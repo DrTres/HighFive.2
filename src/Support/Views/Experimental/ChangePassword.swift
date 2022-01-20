@@ -87,8 +87,8 @@ struct ChangePassword: View {
         
         VStack {
             
-         HStack {
-             Text("Change your Mac password").font(.system(.body, design: .rounded)).fontWeight(.medium)
+        HStack {
+            Text("Change your Mac password").font(.system(.body, design: .rounded)).fontWeight(.medium)
               Spacer()
          }
                     
@@ -130,6 +130,7 @@ struct ChangePassword: View {
                     .frame(width: 200)
 
             }
+            
             
             HStack {
                 Button(action: {

@@ -15,13 +15,13 @@ struct DarkModeBorder: ViewModifier {
     
     func body(content: Content) -> some View {
         
-        if colorScheme == .light {
+        if colorScheme == .dark {
             content
                 .overlay(
                     RoundedRectangle(cornerRadius: 10)
-                        .strokeBorder(Color.white, lineWidth: 0.5, antialiased: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
+                        .strokeBorder(Color.black, lineWidth: 0.5, antialiased: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
                         .opacity(0.15))
-                .shadow(color: .white, radius: 0.5, x: 0, y: 0)
+                .shadow(color: .gray, radius: 0.5, x: 0, y: 0)
         } else {
             content
         }

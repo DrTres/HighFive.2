@@ -15,7 +15,7 @@
       "scale" : "1x"
     },
     {
-      "filename" : "PrimaryLogo@4x.png",
+      "filename" : "bg gray hand 32px-1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
@@ -26,7 +26,7 @@
           "value" : "dark"
         }
       ],
-      "filename" : "bghands_32px_dark.png",
+      "filename" : "bg gray hand 32px.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
